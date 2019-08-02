@@ -3,9 +3,9 @@ package com.twitter.polls.payload;
 public class ApiResponse {
 	
 	private Boolean success;
-	private Boolean message;
+	private String message;
 		
-	public ApiResponse(Boolean success, Boolean message) {
+	public ApiResponse(Boolean success, String message) {
 		this.success = success;
 		this.message = message;
 	}
@@ -18,11 +18,11 @@ public class ApiResponse {
 		this.success = success;
 	}
 	
-	public Boolean getMessage() {
+	public String getMessage() {
 		return message;
 	}
 	
-	public void setMessage(Boolean message) {
+	public void setMessage(String message) {
 		this.message = message;
 	}
 	
