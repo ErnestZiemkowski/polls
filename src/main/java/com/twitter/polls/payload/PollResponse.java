@@ -65,5 +65,11 @@ public class PollResponse {
 	public void setSelectedChoice(Long selectedChoice) {
 		this.selectedChoice = selectedChoice;
 	}
+	public Long getTotalVotes() {
+		return totalVotes;
+	}
+	public void setTotalVotes(Long totalVotes) {
+		this.totalVotes = totalVotes;
+	}
 	
 }
