@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.twitter.polls.model.Role;
 import com.twitter.polls.model.RoleName;
 
-public interface RoleDao extends JpaRepository<Role, Long> {
+public interface RoleDAO extends JpaRepository<Role, Long> {
 	Optional<Role> findByName(RoleName roleName);
 }

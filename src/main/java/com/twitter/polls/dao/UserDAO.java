@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.twitter.polls.model.User;
 
 @Repository
-public interface UserDao extends JpaRepository<User, Long> {
+public interface UserDAO extends JpaRepository<User, Long> {
 	
 	Optional<User> findByEmail(String email);
 	

@@ -7,14 +7,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.twitter.polls.dao.UserDao;
+import com.twitter.polls.dao.UserDAO;
 import com.twitter.polls.model.User;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
 	@Autowired
-	UserDao userDAO;
+	UserDAO userDAO;
 	
 	@Override
 	@Transactional

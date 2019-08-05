@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.twitter.polls.dao.RoleDao;
-import com.twitter.polls.dao.UserDao;
+import com.twitter.polls.dao.RoleDAO;
+import com.twitter.polls.dao.UserDAO;
 import com.twitter.polls.exception.AppException;
 import com.twitter.polls.model.Role;
 import com.twitter.polls.model.RoleName;
@@ -39,10 +39,10 @@ public class AuthController {
 	AuthenticationManager authenticationManager;
 	
 	@Autowired
-	UserDao userDAO;
+	UserDAO userDAO;
 	
 	@Autowired
-	RoleDao roleDAO;
+	RoleDAO roleDAO;
 	
 	@Autowired
 	PasswordEncoder passwordEncoder;
